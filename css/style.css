@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1920px;
+    font-size: clamp(10px, 1.0vw, 20px);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+header, nav ul{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+section header{
+margin: 0 auto;
+  width: 95%;
+  padding: 2% 0;
+  z-index: 1;
+  position: relative;
+}
+nav ul li{
+    padding: 1em 2em;
+}
+nav ul li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+}
+.banner-slide{
+    max-width: 1920px;
+}
+.banner-slide::before{
+content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99.5%;
+  background-color: rgba(0, 0, 0);
+  opacity: 0.4;
+}
+.herobanner{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.img-logo{
+    width: 15%;
+}
+.container{
+    margin: 0 auto;
+    width: 95%;
+}
+.herobanner img{
+    width: 100%;
+  aspect-ratio: 16/7.7;
+  object-fit: cover;
+}
+
+.hero-title{
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: clamp(53px, 5.2vw, 100px);
+    font-family: "Cinzel", serif;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* about */
+
+.about{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-about{
+    width: 50%;
+}
+
+.title-section{
+    font-size: clamp(40px, 4.0vw, 80px);
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}
+.description{
+    font-size: clamp(10px, 1.0vw, 20px);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+/* accomodation */
+
+.acomodation{
+    margin-top: 10%;
+}
+
+.acomodation .title-section, .offer .title-section{
+    text-align: center;
+}
+.acomodation-room{
+margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  gap: 35px;
+}
+.box-img{
+  overflow: hidden;
+  border-radius: 15px;
+  height: 18vw;
+  max-height: 358px;
+}
+.box-offer-img{
+overflow: hidden;
+  border-radius: 15px;
+  height: 35vw;
+  max-height: 500px;
+}
+.box-acomodation{
+    width: 87%;
+}
+.box-acomodation img, .box-offer img{
+    width: 100%;
+}
+.box-acomodation img, .box-offer-img img {
+  transition: transform 0.3s ease;  /* animasi halus saat zoom */
+}
+.box-img:hover img, .box-offer-img:hover img{
+    overflow: hidden;
+    transform: scale(1.1);
+}
+.acomodation .description{
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+}
+.title-room{
+    font-family: "Cinzel", serif;
+    font-size: clamp(15px, 1.5vw, 30px);
+    font-weight: 600;
+    color: #2B2828;
+}
+.description-room{
+    margin: 0% 0 5%;
+}
+.box-acomodation a{
+    color: #2B2828;
+}
+
+.offer{
+    margin-top: 10%;
+}
+
+.offer-package{
+    margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 35px;
+}
+
+.box-offer{
+    width: 87%;
+}
+
+footer{
+    margin-top: 20%;
+}
+.img-footer{
+    width: 100%;
+}
