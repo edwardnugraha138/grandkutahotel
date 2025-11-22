@@ -33,6 +33,9 @@ nav ul li, a {
     text-decoration: none;
     color: #fff;
 }
+nav ul li, a.active {
+    color: #F7931E;
+}
 .banner-slide{
     max-width: 1920px;
 }
@@ -138,7 +141,7 @@ overflow: hidden;
     width: 100%;
 }
 .box-acomodation img, .box-offer-img img {
-  transition: transform 0.3s ease;  /* animasi halus saat zoom */
+  transition: transform 0.3s ease; 
 }
 .box-img:hover img, .box-offer-img:hover img{
     overflow: hidden;
@@ -156,7 +159,7 @@ overflow: hidden;
     color: #2B2828;
 }
 .description-room{
-    margin: 0% 0 5%;
+    margin: 0% 0 3%;
 }
 .box-acomodation a{
     color: #2B2828;
@@ -174,11 +177,62 @@ overflow: hidden;
 }
 
 .box-offer{
+    margin-bottom: 4%;
     width: 87%;
+}
+.box-offer a{
+color: #2B2828;
+  border: 3px solid #F7931E;
+  border-radius: 15px;
+  padding: 0.4em 2em;
+}
+
+.gallery{
+    margin: 10% 0;
+}
+.box-gallery {
+  position: relative;     
+  overflow: hidden;        
+}
+
+.box-gallery {
+  position: relative;
+  overflow: hidden;
+}
+
+.box-gallery img {
+  width: 100%;
+  display: block;
+}
+
+.box-gallery::before {
+  content: "";
+  position: absolute;
+  inset: 0;               
+  background-color: rgba(0, 0, 0, 0.35);
+  opacity: 1;
+  transition: 0.2s ease-in-out;
+}
+
+
+.box-gallery:hover::before {
+  opacity: 1;   
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+.box-gallery{
+height: 21.2vw;
+  max-height: 393px;
+}
+.grid-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    position: relative;
 }
 
 footer{
-    margin-top: 20%;
+    margin-top: 15%;
 }
 .img-footer{
     width: 100%;
