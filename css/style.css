@@ -220,19 +220,74 @@ color: #2B2828;
   background-color: rgba(0, 0, 0, 0);
 }
 
-
-.box-gallery{
-height: 21.2vw;
-  max-height: 393px;
-}
 .grid-gallery{
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
     position: relative;
 }
 
+
+/* accomodation page */
+.hero-banner img{
+    position: absolute;
+    width: 100%;
+}
+.banner-accomodation img{
+    width: 100%;
+  aspect-ratio: 16/5.7;
+  object-fit: cover;
+}
+.banner-accomodation::before {
+content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 74.4%;
+  background-color: rgba(0, 0, 0);
+  opacity: 0.4;
+}
+
+.room-list{
+    margin: 0 auto;
+    margin-top: 25%;
+    width: 91%;
+}
+
+.room-list-content{
+    margin-top: 10%;
+display: flex;
+  justify-content: space-between;
+  gap: 7%;
+}
+.room-list-content-reverse{
+        margin-top: 10%;
+display: flex;
+  justify-content: space-between;
+  gap: 7%;
+  flex-direction: row-reverse;
+}
+
+.box-room-img{
+   width: 54%;
+   overflow: hidden;
+}
+.box-room-img img{
+    width: 100%;
+}
+.box-room-description{
+width: 38%;
+  align-self: center;
+}
+
+.box-room-description .description-room{
+    margin: 0% 0 3%;
+  width: 75%;
+}
+
 footer{
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .img-footer{
     width: 100%;

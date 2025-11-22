@@ -32,3 +32,21 @@ document.addEventListener('DOMContentLoaded', function () {
   // Inisialisasi Swiper
   var logoSwiper = new Swiper('.herobanner', swiperLogoSettings);
 });
+
+    var swiper = new Swiper(".box-room-img", {
+      spaceBetween: 30,
+      effect: "fade",
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      speed: 200,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
