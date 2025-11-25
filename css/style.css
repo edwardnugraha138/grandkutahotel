@@ -87,9 +87,12 @@ content: "";
 /* about */
 
 .about{
-    margin-top: 20%;
-    display: flex;
-    justify-content: space-between;
+display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+    margin-top: 0px;
+  margin-top: 20%;
+  width: 87%;
 }
 
 .box-about{
@@ -110,7 +113,10 @@ content: "";
 /* accomodation */
 
 .acomodation{
-    margin-top: 10%;
+margin: 0 auto;
+    margin-top: 0px;
+  width: 87%;
+  margin-top: 10%;
 }
 
 .acomodation .title-section, .offer .title-section{
@@ -125,13 +131,13 @@ margin-top: 5%;
 .box-img{
   overflow: hidden;
   border-radius: 15px;
-  height: 18vw;
+  height: 16vw;
   max-height: 358px;
 }
 .box-offer-img{
 overflow: hidden;
   border-radius: 15px;
-  height: 35vw;
+  height: 24vw;
   max-height: 500px;
 }
 .box-acomodation{
@@ -166,7 +172,10 @@ overflow: hidden;
 }
 
 .offer{
-    margin-top: 10%;
+margin: 0 auto;
+    margin-top: 0px;
+  margin-top: 10%;
+  width: 87%;
 }
 
 .offer-package{
@@ -252,7 +261,7 @@ content: "";
 .room-list{
     margin: 0 auto;
     margin-top: 25%;
-    width: 91%;
+    width: 87%;
 }
 
 .room-list-content{
