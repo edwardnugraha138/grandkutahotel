@@ -139,6 +139,9 @@ overflow: hidden;
   border-radius: 15px;
   height: 24vw;
   max-height: 500px;
+  object-fit: cover;
+  aspect-ratio: 7/5;
+  object-position: center;
 }
 .box-acomodation{
     width: 87%;
@@ -156,7 +159,7 @@ overflow: hidden;
 .acomodation .description{
     margin: 0 auto;
     text-align: center;
-    width: 40%;
+    width: 45%;
 }
 .title-room{
     font-family: "Cinzel", serif;
@@ -283,7 +286,11 @@ display: flex;
    overflow: hidden;
 }
 .box-room-img img{
-    width: 100%;
+  width: 100%;
+  aspect-ratio: 7/5;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
 }
 .box-room-description{
 width: 38%;
@@ -292,7 +299,7 @@ width: 38%;
 
 .box-room-description .description-room{
     margin: 0% 0 3%;
-  width: 75%;
+  width: 100%;
 }
 
 footer{
