@@ -87,8 +87,6 @@ content: "";
 /* about */
 
 .about{
-display: flex;
-  justify-content: space-between;
   margin: 0 auto;
     margin-top: 0px;
   margin-top: 20%;
@@ -96,7 +94,7 @@ display: flex;
 }
 
 .box-about{
-    width: 50%;
+    width: 100%;
 }
 
 .title-section{
@@ -110,13 +108,25 @@ display: flex;
   font-weight: 400;
 }
 
+.box-about .title-section, .box-about .description{
+  text-align: center;
+}
+.box-about .title-section{
+line-height: 0.5;
+  margin-bottom: 2%;
+}
+.box-about .description{
+  width: 60%;
+  margin: 0 auto;
+}
+
 /* accomodation */
 
 .acomodation{
 margin: 0 auto;
     margin-top: 0px;
   width: 87%;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 .acomodation .title-section, .offer .title-section{
@@ -151,6 +161,9 @@ overflow: hidden;
 }
 .box-acomodation img, .box-offer-img img {
   transition: transform 0.3s ease; 
+  object-fit: cover;
+  aspect-ratio: 7/5;
+  object-position: center;
 }
 .box-img:hover img, .box-offer-img:hover img{
     overflow: hidden;
@@ -174,6 +187,8 @@ overflow: hidden;
     color: #2B2828;
 }
 
+
+/* Offer */
 .offer{
 margin: 0 auto;
     margin-top: 0px;
@@ -192,7 +207,7 @@ margin: 0 auto;
     margin-bottom: 4%;
     width: 87%;
 }
-.box-offer a{
+.box-offer a, .box-room-description a{
 color: #2B2828;
   border: 3px solid #F7931E;
   border-radius: 15px;
@@ -298,7 +313,7 @@ width: 38%;
 }
 
 .box-room-description .description-room{
-    margin: 0% 0 3%;
+    margin: 0% 0 5%;
   width: 100%;
 }
 
