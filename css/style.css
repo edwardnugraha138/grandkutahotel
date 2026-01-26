@@ -118,7 +118,7 @@ line-height: 1;
   margin-bottom: 2%;
 }
 .box-about .description{
-  width: 60%;
+  width: 62%;
   margin: 0 auto;
 }
 
@@ -291,13 +291,13 @@ content: "";
 }
 
 .room-list-content{
-    margin-top: 10%;
+    padding-top: 10%;
 display: flex;
   justify-content: space-between;
   gap: 7%;
 }
 .room-list-content-reverse{
-        margin-top: 10%;
+        padding-top: 10%;
 display: flex;
   justify-content: space-between;
   gap: 7%;
