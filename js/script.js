@@ -33,14 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var logoSwiper = new Swiper('.herobanner', swiperLogoSettings);
 });
 
-    var swiper = new Swiper(".box-room-img", {
+    var swiper = new Swiper(".box-room-img, .box-room-img-accomodation", {
       spaceBetween: 30,
-      effect: "fade",
+      effect: "slide",
       autoplay: {
-        delay: 1500,
+        delay: 5500,
         disableOnInteraction: false,
       },
-      speed: 200,
+      speed: 800,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -64,9 +64,39 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.2, // 20% terlihat baru animasi jalan
+      threshold: 0.2,
     }
   );
 
   sections.forEach((section) => observer.observe(section));
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const otherRoomEl = document.querySelector(".other-room");
+
+  if (!otherRoomEl) {
+    console.warn("Swiper: elemen .other-room tidak ditemukan");
+    return;
+  }
+
+  const otherRoomSwiper = new Swiper(".other-room", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    effect: "slide",
+    loop: true,
+    speed: 800,
+    autoplay: {
+      delay: 5500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    }
+  });
 });
